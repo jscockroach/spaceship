@@ -15,7 +15,7 @@ const getData = async (url, value) => {
   try {
     let response = await fetch(requestUrl, fetchOptions);
     let res = await response.json();
-    return res.body;
+    return res;
   } catch (error) {
     console.error('fetchDataError', error);
   }
