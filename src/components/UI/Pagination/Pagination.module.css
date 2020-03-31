@@ -1,0 +1,29 @@
+.paginationBlock {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.paginationButton {
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
+.paginationButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s ease-in-out;
+}
+.paginationButton:disabled {
+  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: auto;
+}
+.paginationButton:disabled:hover {
+  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: auto;
+}

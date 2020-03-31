@@ -1,0 +1,57 @@
+.shipContainer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.ship {
+  padding: 0 50px;
+  height: 300px;
+  width: auto;
+}
+.shipAboutBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.shipAboutItem {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutName {
+  color: rgb(255, 253, 164);
+  font-size: 12px;
+  text-decoration-line: underline;
+  margin-right: 15px;
+  letter-spacing: 0.5px;
+}
+.goBackContainer {
+  display: flex;
+  justify-content: right;
+}
+.goBack {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 7px 50px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.goBack:hover {
+  background-color: #fff;
+  color: rgb(102, 102, 102);
+}

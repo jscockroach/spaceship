@@ -7,6 +7,10 @@ export const rootReducer = (state = initialState, action) => {
       return Object.assign({}, state, {
         allStarships: action.allStarships
       });
+    case actionTypes.SAVE_DATA_BY_ONE_SHIP_SUCCESS:
+      return Object.assign({}, state, {
+        ship: action.ship
+      });
     default:
       return state;
   }

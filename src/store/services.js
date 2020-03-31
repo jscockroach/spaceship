@@ -1,7 +1,5 @@
-import * as constants from "./../constants/constants";
-
 const getData = async (url, value) => {
-  let requestUrl = `${constants.baseUrl}${url}`;
+  let requestUrl = `${url}`;
   let fetchOptions = {
     method: "GET",
     headers: {

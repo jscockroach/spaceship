@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import Spaceships from "../../components/Spaceships/Spaceships";
-import { getData } from "../../store/actions";
+import { getData, getDataBySearchQuery } from "../../store/actions";
 
 const mapStateToProps = state => {
   return {
@@ -13,7 +13,8 @@ const mapDispatchToProps = dispatch => {
   return {
     actions: bindActionCreators(
       {
-        getData
+        getData,
+        getDataBySearchQuery
       },
       dispatch
     )
