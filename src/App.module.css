@@ -9,3 +9,79 @@
   top: 0;
   overflow: auto;
 }
+.ship1 {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: -50%;
+  animation: move1 4s infinite linear;
+  transform: rotate(-10deg);
+}
+.ship2 {
+  height: 50px;
+  position: fixed;
+  bottom: -50px;
+  left: 40%;
+  animation: move2 10s infinite linear;
+  transform: rotate(-40deg);
+}
+
+@keyframes move1 {
+  from {
+    bottom: -150px;
+  }
+  40% {
+    bottom: 60%;
+    left: -25%;
+    transform: rotate(10deg);
+  }
+  50% {
+    bottom: 70%;
+    left: -20%;
+    transform: rotate(15deg);
+  }
+  60% {
+    bottom: 80%;
+    left: -15%;
+    transform: rotate(17deg);
+  }
+  75% {
+    bottom: 90%;
+    left: -8%;
+    transform: rotate(30deg);
+  }
+  to {
+    bottom: 100%;
+    left: 20%;
+    transform: rotate(50deg);
+  }
+}
+@keyframes move2 {
+  from {
+    bottom: -150px;
+  }
+  60% {
+    bottom: 70%;
+    transform: rotate(-40deg);
+  }
+  70% {
+    bottom: 75%;
+    transform: rotate(-130deg);
+  }
+  80% {
+    bottom: 72%;
+    transform: rotate(-200deg);
+  }
+  85% {
+    bottom: 65%;
+    transform: rotate(-250deg);
+  }
+  90% {
+    bottom: 50%;
+    transform: rotate(-350deg);
+  }
+  to {
+    bottom: -100px;
+    transform: rotate(-700deg);
+  }
+}

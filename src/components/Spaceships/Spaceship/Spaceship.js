@@ -3,7 +3,7 @@ import styles from "./Spaceship.module.css";
 import { ReactComponent as Spiceplate } from "../../../assets/spaceship.svg";
 
 const Spaceship = props => {
-  console.log(props.spaceship);
+  // console.log(props.spaceship);
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
