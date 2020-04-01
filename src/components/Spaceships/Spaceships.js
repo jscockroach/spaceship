@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Spaceship from "./Spaceship/Spaceship";
-import { Header, Loader, Pagination, Search } from "../UI";
+import { Header, Loader, Pagination, Search, CustomButton } from "../UI";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
@@ -83,11 +83,17 @@ const Spaceships = props => {
             {allStarships ? (
               <React.Fragment>
                 <div className={styles.searchAndPaginationBlock}>
-                  <Search
-                    inputValue={inputValue}
-                    searchHandler={searchHandler}
-                    changeInputHandler={changeInputHandler}
-                  />
+                  <div className={styles.searchBlock}>
+                    <Search
+                      inputValue={inputValue}
+                      searchHandler={searchHandler}
+                      changeInputHandler={changeInputHandler}
+                    />
+                    <CustomButton
+                      onClickHandler={() => searchHandler(inputValue)}
+                      name="Search"
+                    />
+                  </div>
                   <Pagination
                     prev={allStarships.previous}
                     next={allStarships.next}
