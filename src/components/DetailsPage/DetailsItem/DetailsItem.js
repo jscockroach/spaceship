@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "./DetailsItem.module.css";
 import { ReactComponent as Spiceplate } from "../../../assets/spaceship.svg";
+import { CustomButton } from "../../UI";
 import PropTypes from "prop-types";
 
 const DetailsItem = props => {
   const { shipData } = props;
+
+  const onClickHandler = () => {
+    props.history.goBack();
+  };
   return (
     <React.Fragment>
       <div className={styles.goBackContainer}>
-        <button
-          className={styles.goBack}
-          onClick={() => props.history.goBack()}
-        >
-          Go back
-        </button>
+        <CustomButton onClickHandler={onClickHandler} name="Go back" />
       </div>
       <div className={styles.shipContainer}>
         <Spiceplate className={styles.ship} />

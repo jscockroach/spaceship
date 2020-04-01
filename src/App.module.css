@@ -85,3 +85,13 @@
     transform: rotate(-700deg);
   }
 }
+@media screen and (max-width: 768px) {
+  .ship1 {
+    left: -100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .ship1 {
+    left: -140%;
+  }
+}

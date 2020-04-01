@@ -39,19 +39,32 @@
 .goBackContainer {
   display: flex;
   justify-content: right;
-}
-.goBack {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 7px 50px;
-  font-weight: 600;
-  font-size: 16px;
   margin-bottom: 20px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
-.goBack:hover {
-  background-color: #fff;
-  color: rgb(102, 102, 102);
+
+@media screen and (max-width: 768px) {
+  .ship {
+    padding: 0 0px;
+    width: 35%;
+    height: auto;
+  }
+  .shipAboutBlock {
+    margin-left: 20px;
+  }
+  .shipContainer {
+    align-items: center;
+  }
 }
+@media screen and (max-width: 512px) {
+  .ship {
+    width: 30%;
+    height: auto;
+    margin: auto;
+  }
+  .shipContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
