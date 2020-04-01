@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Spaceship.module.css";
 import { ReactComponent as Spiceplate } from "../../../assets/spaceship.svg";
+import PropTypes from "prop-types";
 
 const Spaceship = props => {
   return (
@@ -28,6 +29,11 @@ const Spaceship = props => {
       </div>
     </div>
   );
+};
+
+Spaceship.propTypes = {
+  spaceship: PropTypes.object,
+  goToDetailsPageAboutShip: PropTypes.func
 };
 
 export default Spaceship;

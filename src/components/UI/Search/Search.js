@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Input from "@material-ui/core/Input";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,3 +31,8 @@ export default function BasicTextFields(props) {
     </form>
   );
 }
+
+BasicTextFields.propTypes = {
+  changeInputHandler: PropTypes.func,
+  inputValue: PropTypes.string
+};

@@ -8,6 +8,7 @@ import Container from "@material-ui/core/Container";
 import styles from "./Spaceships.module.css";
 
 import * as constants from "../../constants/constants";
+import PropTypes from "prop-types";
 
 const Spaceships = props => {
   const { allStarships, history, location, actions } = props;
@@ -103,6 +104,13 @@ const Spaceships = props => {
       </Container>
     </div>
   );
+};
+
+Spaceships.propTypes = {
+  allStarships: PropTypes.object,
+  location: PropTypes.object,
+  history: PropTypes.object,
+  actions: PropTypes.object
 };
 
 export default Spaceships;
