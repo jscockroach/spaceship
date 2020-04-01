@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Pagination.module.css";
+import PropTypes from "prop-types";
 
 const Pagination = props => {
   return (
@@ -20,6 +21,10 @@ const Pagination = props => {
       </button>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  paginationButtonsHandler: PropTypes.func
 };
 
 export default Pagination;

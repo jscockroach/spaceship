@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./DetailsItem.module.css";
 import { ReactComponent as Spiceplate } from "../../../assets/spaceship.svg";
+import PropTypes from "prop-types";
 
 const DetailsItem = props => {
   const { shipData } = props;
@@ -50,6 +51,11 @@ const DetailsItem = props => {
       </div>
     </React.Fragment>
   );
+};
+
+DetailsItem.propTypes = {
+  history: PropTypes.object,
+  shipData: PropTypes.object
 };
 
 export default DetailsItem;

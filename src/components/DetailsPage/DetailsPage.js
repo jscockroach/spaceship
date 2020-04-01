@@ -3,6 +3,7 @@ import { Header, Loader } from "../UI";
 import DetailsItem from "./DetailsItem/DetailsItem";
 
 import * as constants from "../../constants/constants";
+import PropTypes from "prop-types";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
@@ -49,6 +50,12 @@ const DetailsPage = props => {
       </Container>
     </div>
   );
+};
+
+DetailsPage.propTypes = {
+  actions: PropTypes.object,
+  match: PropTypes.object,
+  ship: PropTypes.object
 };
 
 export default DetailsPage;
